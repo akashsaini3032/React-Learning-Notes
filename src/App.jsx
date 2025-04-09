@@ -1,31 +1,31 @@
-const Data={
+// const Data={
  
-   color:"red"
+//    color:"red"
    
- }
+//  }
 
- const Dataa={
+//  const Dataa={
  
-  color:"blue"
+//   color:"blue"
   
-}
+// }
  
 
-const Dataaa={
+// const Dataaa={
  
-  color:"green"
+//   color:"green"
   
-}
+// }
  
  
- const App = ()=>{
-   return(
-       <>
+//  const App = ()=>{
+//    return(
+//        <>
     
-       <h1 style={Data}>Welcome to cybrom</h1>
-       <h1 style={Dataa}>Welcome to cybrom</h1>
-       <h1 style={Dataaa}>Welcome to cybrom</h1>
-       </>
-   )
- }
- export default App;
+//        <h1 style={Data}>Welcome to cybrom</h1>
+//        <h1 style={Dataa}>Welcome to cybrom</h1>
+//        <h1 style={Dataaa}>Welcome to cybrom</h1>
+//        </>
+//    )
+//  }
+//  export default App;
