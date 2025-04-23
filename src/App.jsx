@@ -1,47 +1,31 @@
-// import { useState } from "react";
-
-// import Comp1 from "./Comp1";
 
 
 
-// const App=()=>{
-//     const [user, SetUser]= useState("Akash");
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
+import Home from "./Home";
+import Insert from "./Insert";
+import Display from "./Display";
+import Increment from "./Increment";
+import Theme from "./Theme";
 
-//     return(
-
-//         <>
-
-//         <h1>Welcome {user} !!!</h1>
-//         <Comp1 user={user} />
-        
-//         </>
-//     )
-// }
-
-// export default App;
-
-
-
-
-// import { useState } from "react";
-
-// import Comp1 from "./Comp1";
-
-
-
-// const App=()=>{
-//     const [user, SetUser]= useState("Akash");
-
-//     return(
-
-//         <>
-
-//         <h1>Welcome {user} !!!</h1>
-//         <Comp1 user={user} />
-        
-//         </>
-//     )
-// }
-
-// export default App;
-
+const App=()=>{
+  return(
+    <> 
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout/>}>
+            <Route index element={<Home/>}/>
+            <Route path="home" element={<Home/>}/>
+            <Route path="insert" element={<Insert/>}/>
+            <Route path="display" element={<Display/>}/>
+            <Route path="increment" element={<Increment/>}/>
+            <Route path="theme" element={<Theme/>}/>
+           
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
+}
+export default App;
