@@ -8,20 +8,74 @@
 // ╰════════════════════════════════════════════════════════════╯
 
 
+// import { createSlice } from "@reduxjs/toolkit";
+
+
+// const colorSlice= createSlice({
+//     name:"mycolor",
+//     initialState:{
+//         color:"yellow"
+//     },
+//     reducers:{
+//        changeColor:(state)=>{
+//         state.color="red";
+//        }
+//     }
+// })
+
+// export const {changeColor}= colorSlice.actions;
+// export default colorSlice.reducer;
+
+
+
+
+
+
+
+// import { createSlice } from "@reduxjs/toolkit";
+
+
+// const colorSlice= createSlice({
+//     name:"mycolor",
+//     initialState:{
+//         color:"yellow"
+//     },
+//     reducers:{
+//        changeColor:(state, actions)=>{
+//         console.log(actions.payload);
+//         state.color=actions.payload
+//        }
+//     }
+// })
+
+// export const {changeColor}= colorSlice.actions;
+// export default colorSlice.reducer;
+
+
+
+
+
+
+
+
+
 import { createSlice } from "@reduxjs/toolkit";
 
 
 const colorSlice= createSlice({
     name:"mycolor",
     initialState:{
-        color:"yellow"
+        work:[]
     },
     reducers:{
-       changeColor:(state)=>{
-        state.color="red";
+       changeColor:(state, actions)=>{
+        state.work.push(actions.payload);
        }
     }
 })
 
 export const {changeColor}= colorSlice.actions;
 export default colorSlice.reducer;
+
+
+
