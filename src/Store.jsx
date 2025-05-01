@@ -144,3 +144,17 @@
 // │ 🚀 SECTION : [Redux Toolkit day 4]                       │
 // │ 📝 DESCRIPTION : [Day 4 task 1 ]   Make ToDo list App         │
 // ╰════════════════════════════════════════════════════════════╯
+
+
+import { configureStore } from "@reduxjs/toolkit";
+
+import todoReducer from "./todoSlice";
+
+
+const store=configureStore({
+    reducer:{
+        todo:todoReducer
+    }
+})
+
+export default store;
