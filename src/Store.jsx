@@ -86,8 +86,8 @@
 
 
 // ╭════════════════════════════════════════════════════════════╮
-// │ 🚀 SECTION : [Redux Toolkit day 2]                       │
-// │ 📝 DESCRIPTION : [Day 2 task 1 ]   Namechange           │
+// │ 🚀 SECTION : [Redux Toolkit day 3]                                 │
+// │ 📝 DESCRIPTION : [Day 3 task 1 ]   Colorchange  by user(dynamic)   │
 // ╰════════════════════════════════════════════════════════════╯
 // import { configureStore } from "@reduxjs/toolkit";
 
@@ -114,20 +114,33 @@
 
 
 // ╭════════════════════════════════════════════════════════════╮
-// │ 🚀 SECTION : [Redux Toolkit day 2]                       │
-// │ 📝 DESCRIPTION : [Day 2 task 1 ]   Namechange           │
+// │ 🚀 SECTION : [Redux Toolkit day 3]                       │
+// │ 📝 DESCRIPTION : [Day 3 task 2 ]   add list todo         │
 // ╰════════════════════════════════════════════════════════════╯
-import { configureStore } from "@reduxjs/toolkit";
+// import { configureStore } from "@reduxjs/toolkit";
 
 
-import colorReducer from "./colorSlice";
+// import colorReducer from "./colorSlice";
 
 
-const store= configureStore({
-    reducer:{
-        mycolor:colorReducer
-    }
-})
+// const store= configureStore({
+//     reducer:{
+//         mydark:colorReducer
+//     }
+// })
 
 
-export default store;
+// export default store;
+
+
+
+
+
+
+
+
+
+// ╭════════════════════════════════════════════════════════════╮
+// │ 🚀 SECTION : [Redux Toolkit day 4]                       │
+// │ 📝 DESCRIPTION : [Day 4 task 1 ]   Make ToDo list App         │
+// ╰════════════════════════════════════════════════════════════╯

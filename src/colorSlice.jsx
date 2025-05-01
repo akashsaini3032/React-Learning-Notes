@@ -35,8 +35,8 @@
 
 
 // ╭════════════════════════════════════════════════════════════╮
-// │ 🚀 SECTION : [Redux Toolkit day 2]                       │
-// │ 📝 DESCRIPTION : [Day 2 task 1 ]   Namechange           │
+// │ 🚀 SECTION : [Redux Toolkit day 3]                       │
+// │ 📝 DESCRIPTION : [Day 3 task 1 ]   Colour Change by User          │
 // ╰════════════════════════════════════════════════════════════╯
 
 
@@ -69,26 +69,39 @@
 
 
 // ╭════════════════════════════════════════════════════════════╮
-// │ 🚀 SECTION : [Redux Toolkit day 2]                       │
-// │ 📝 DESCRIPTION : [Day 2 task 1 ]   Namechange           │
+// │ 🚀 SECTION : [Redux Toolkit day 3]                       │
+// │ 📝 DESCRIPTION : [Day 3 task 2 ]   add list todo            │
 // ╰════════════════════════════════════════════════════════════╯
-import { createSlice } from "@reduxjs/toolkit";
+// import { createSlice } from "@reduxjs/toolkit";
 
 
-const colorSlice= createSlice({
-    name:"mycolor",
-    initialState:{
-        work:[]
-    },
-    reducers:{
-       changeColor:(state, actions)=>{
-        state.work.push(actions.payload);
-       }
-    }
-})
+// const colorSlice= createSlice({
+//     name:"mycolor",
+//     initialState:{
+//         work:[]
+//     },
+//     reducers:{
+//        changeColor:(state, actions)=>{
+//         state.work.push(actions.payload);
+//        }
+//     }
+// })
 
-export const {changeColor}= colorSlice.actions;
-export default colorSlice.reducer;
+// export const {changeColor}= colorSlice.actions;
+// export default colorSlice.reducer;
+
+
+
+
+
+
+
+
+
+// ╭════════════════════════════════════════════════════════════╮
+// │ 🚀 SECTION : [Redux Toolkit day 4]                       │
+// │ 📝 DESCRIPTION : [Day 4 task 1 ]   Make to do list App          │
+// ╰════════════════════════════════════════════════════════════╯
 
 
 

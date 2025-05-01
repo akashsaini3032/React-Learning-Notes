@@ -118,14 +118,14 @@
 
 
 // ╭════════════════════════════════════════════════════════════╮
-// │ 🚀 SECTION : [Redux Toolkit day 2]                       │
-// │ 📝 DESCRIPTION : [Day 2 task 1 ]   Namechange           │
+// │ 🚀 SECTION : [Redux Toolkit day 3]                       │
+// │ 📝 DESCRIPTION : [Day 3 task 1 ]   Colour Change by User           │
 // ╰════════════════════════════════════════════════════════════╯
 // ╭────────────────────────────────────────────────────────────╮
-// │ 🚀 SECTION     : Redux Toolkit — Day 2                    │
+// │ 🚀 SECTION     : Redux Toolkit — Day 3                   │
 // │ 🎯 DESCRIPTION : Task 1 —                         │
 // │                                                           │
-// │ 🏗️ BLUEPRINT   : Store,main,nameslice,app              │
+// │ 🏗️ BLUEPRINT   : Store,main,colorlice,app              │
 // │ 📚 DETAILS     : yah upar sequence hai code ka            │
 // ╰────────────────────────────────────────────────────────────╯
 
@@ -167,69 +167,103 @@
 
 
 
+// // ╭════════════════════════════════════════════════════════════╮
+// // │ 🚀 SECTION : [Redux Toolkit day 3]                       │
+// // │ 📝 DESCRIPTION : [Day 3 task 2 ]   add list todo           │
+// // ╰════════════════════════════════════════════════════════════╯
+// // ╭────────────────────────────────────────────────────────────╮
+// // │ 🚀 SECTION     : Redux Toolkit — Day 3                    │
+// // │ 🎯 DESCRIPTION : Task 2 —   add list todo                       │
+// // │                                                           │
+// // │ 🏗️ BLUEPRINT   : Store,main,colorslice,app              │
+// // │ 📚 DETAILS     : yah upar sequence hai code ka            │
+// // ╰────────────────────────────────────────────────────────────╯
+
+
+// import { useState } from "react";
+// import { useSelector, useDispatch } from "react-redux";
+// import { changeColor } from "./colorSlice";
+
+// const App=()=>{
+//     const data=useSelector(state=>state.mydark.work);
+//     const dispatch=useDispatch();
+
+//     const [txtval, setTxtval]=useState("")
+//     console.log(data);
+//     let sno=0;
+
+//     const ans=data.map((key)=>{
+//         sno++;
+//         return(
+//             <>
+//             <tr>
+//                 <td>{sno}</td>
+//                 <td>{key.task}</td>
+//             </tr>
+//             </>
+//         )
+//     })
+//     return(
+//         <>
+
+//         <h1>Welcome</h1>
+//         Enter Colour: <input type="text" value={txtval} 
+//         onChange={(e)=>{setTxtval(e.target.value)}} />
+
+//         <button onClick={()=>{dispatch(changeColor({task:txtval}))}}>change color</button>
+//         <hr />
+
+//         <table>
+//             <tr>
+//                 <th>#</th>
+//                 <th>Your task list</th>
+//             </tr>
+//             {ans}
+//         </table>
+
+        
+//         </>
+
+        
+//     )
+// }
+
+
+// export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ╭════════════════════════════════════════════════════════════╮
-// │ 🚀 SECTION : [Redux Toolkit day 2]                       │
-// │ 📝 DESCRIPTION : [Day 2 task 1 ]   Namechange           │
+// │ 🚀 SECTION : [Redux Toolkit day 4]                       │
+// │ 📝 DESCRIPTION : [Day 4 task 1 ]   Todo list App           │
 // ╰════════════════════════════════════════════════════════════╯
 // ╭────────────────────────────────────────────────────────────╮
-// │ 🚀 SECTION     : Redux Toolkit — Day 2                    │
+// │ 🚀 SECTION     : Redux Toolkit — Day 4                  │
 // │ 🎯 DESCRIPTION : Task 1 —                         │
 // │                                                           │
-// │ 🏗️ BLUEPRINT   : Store,main,nameslice,app              │
+// │ 🏗️ BLUEPRINT   : Store,main,colorlice,app              │
 // │ 📚 DETAILS     : yah upar sequence hai code ka            │
 // ╰────────────────────────────────────────────────────────────╯
 
 
-import { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { changeColor } from "./colorSlice";
-
-const App=()=>{
-    const data=useSelector(state=>state.mycolor.color);
-    const dispatch=useDispatch();
-
-    const [txtval, setTxtval]=useState("")
-    console.log(data);
-    let sno=0;
-
-    const ans=data.map((key)=>{
-        sno++;
-        return(
-            <>
-            <tr>
-                <td>{sno}</td>
-                <td>{key.task}</td>
-            </tr>
-            </>
-        )
-    })
-    return(
-        <>
-
-        <h1>Welcome</h1>
-        Enter Colour: <input type="text" value={txtval} 
-        onChange={(e)=>{setTxtval(e.target.value)}} />
-
-        <button onClick={()=>{dispatch(changeColor({task:txtval}))}}>change color</button>
-        <hr />
-
-        <table>
-            <tr>
-                <th>#</th>
-                <th>Your task list</th>
-            </tr>
-            {ans}
-        </table>
-
-        
-        </>
-
-        
-    )
-}
 
 
-export default App;
+
+
+
+
+
+
 
 
 
