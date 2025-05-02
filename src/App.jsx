@@ -243,6 +243,87 @@
 
 
 
+// // ╭════════════════════════════════════════════════════════════╮
+// // │ 🚀 SECTION : [Redux Toolkit day 4]                       │
+// // │ 📝 DESCRIPTION : [Day 4 task 1 ]   Todo list App           │
+// // ╰════════════════════════════════════════════════════════════╯
+// // ╭────────────────────────────────────────────────────────────╮
+// // │ 🚀 SECTION     : Redux Toolkit — Day 4                  │
+// // │ 🎯 DESCRIPTION : Task 1 —                         │
+// // │                                                           │
+// // │ 🏗️ BLUEPRINT   : Store,main,todoslice,app              │
+// // │ 📚 DETAILS     : yah upar sequence hai code ka            │
+// // ╰────────────────────────────────────────────────────────────╯
+
+
+
+// import { useState } from "react";
+// import { useSelector, useDispatch } from "react-redux";
+
+// import {addTask, removeTask, remByIndex} from "./todoSlice";
+
+// const App=()=>{
+
+//     const [val, setVal]= useState("");
+//     const data= useSelector(state=>state.todo.task);
+//     const dispatch= useDispatch();
+//     console.log(data);
+
+
+//     let sno=0;
+
+//     const ans=data.map((key, index)=>{
+//         sno++;
+//         return(
+//             <>
+//             <tr>
+//                 <td> {sno}</td>
+//                 <td>{key.work}</td>
+//                 <td>
+//                     <button onClick={()=>{dispatch(removeTask({id:key.id}))}}>Delete by id</button>
+//                 </td>
+//                 <td>
+//                      <button onClick={()=>{dispatch(remByIndex({id:index}))}}>Del by index</button>
+//                 </td>
+//             </tr>
+//             </>
+//         )
+//     })
+
+//     return(
+//         <>
+
+//         <h1>Welcome To TO-DO App</h1>
+//         Enter Your Task: <input type="text" value={val}
+//         onChange={(e)=>{setVal(e.target.value)}} />
+
+//         <button onClick={()=>{dispatch(addTask({id:Date.now(),work:val}))}}> Add</button>
+
+//         <hr />
+
+//         <table>
+//             <tr>
+//                 <th> Sno</th>
+//                 <th>your work</th>
+//                 <th></th>
+//                 <th></th>
+//             </tr>
+//             {ans}
+//         </table>
+        
+//         </>
+//     )
+// }
+
+
+// export default App;
+
+
+
+
+
+
+
 // ╭════════════════════════════════════════════════════════════╮
 // │ 🚀 SECTION : [Redux Toolkit day 4]                       │
 // │ 📝 DESCRIPTION : [Day 4 task 1 ]   Todo list App           │
@@ -317,6 +398,27 @@ const App=()=>{
 
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
