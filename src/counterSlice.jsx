@@ -7,28 +7,28 @@
 // ╰════════════════════════════════════════════════════════════╯
 
 
-// import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 
-// const counterSlice= createSlice({
-//     name:"mycounter",
-//     initialState:{
-//         count:0
-//     },
-//     reducers:{
-//         increment:(state)=>{
-//           state.count++;
-//         },
+const counterSlice= createSlice({
+    name:"mycounter",
+    initialState:{
+        count:0
+    },
+    reducers:{
+        increment:(state)=>{
+          state.count++;
+        },
 
-//         decrement:(state)=>{
-//             state.count--;
+        decrement:(state)=>{
+            state.count--;
 
-//         }
-//     }
-// })
+        }
+    }
+})
 
-// export const {increment, decrement}= counterSlice.actions;
-// export default counterSlice.reducer;
+export const {increment, decrement}= counterSlice.actions;
+export default counterSlice.reducer;
 
 
 
