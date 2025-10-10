@@ -169,15 +169,15 @@
 // ╰════════════════════════════════════════════════════════════╯
 
 
-import { configureStore } from "@reduxjs/toolkit";
+// import { configureStore } from "@reduxjs/toolkit";
 
-import todoReducer from "./todoSlice";
+// import todoReducer from "./todoSlice";
 
 
-const store=configureStore({
-    reducer:{
-        todo:todoReducer
-    }
-})
+// const store=configureStore({
+//     reducer:{
+//         todo:todoReducer
+//     }
+// })
 
-export default store;
+// export default store;
