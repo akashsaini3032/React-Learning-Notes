@@ -72,23 +72,23 @@
 // │ 🚀 SECTION : [Redux Toolkit day 3]                       │
 // │ 📝 DESCRIPTION : [Day 3 task 2 ]   add list todo            │
 // ╰════════════════════════════════════════════════════════════╯
-// import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 
-// const colorSlice= createSlice({
-//     name:"mycolor",
-//     initialState:{
-//         work:[]
-//     },
-//     reducers:{
-//        changeColor:(state, actions)=>{
-//         state.work.push(actions.payload);
-//        }
-//     }
-// })
+const colorSlice= createSlice({
+    name:"mycolor",
+    initialState:{
+        work:[]
+    },
+    reducers:{
+       changeColor:(state, actions)=>{
+        state.work.push(actions.payload);
+       }
+    }
+})
 
-// export const {changeColor}= colorSlice.actions;
-// export default colorSlice.reducer;
+export const {changeColor}= colorSlice.actions;
+export default colorSlice.reducer;
 
 
 
